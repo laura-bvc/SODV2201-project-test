@@ -18,10 +18,8 @@ async function fetchData() {
 
     fetch('./products.json')
         .then((response) => response.json() )
-        .then((fetchJ) => console.log(fetchJ) );
+        .then((fetchJ) => view_json(fetchJ) );
 
-    // do the html display here
-    view_json(data);
 
 
 /*

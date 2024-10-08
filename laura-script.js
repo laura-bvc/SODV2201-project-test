@@ -20,8 +20,11 @@ async function fetchData() {
         .then((response) => response.json() )
         .then((fetchJ) => console.log(fetchJ) );
 
+    // do the html display here
+    view_json(data);
 
-} /*
+
+/*
     const API_URL = "https://fakestoreapi.com/products";
 
     try {
@@ -38,7 +41,7 @@ async function fetchData() {
 
     } catch (Error) {
         console.error(Error);
-    }
+*/
 
     
 }
@@ -176,5 +179,3 @@ function sort_price() {
 			}
 	}).appendTo( $('#data').find('tbody') );
 }
-
-*/
